@@ -26,9 +26,9 @@
 		E7279D8C2902D9BB007DAA13 /* MovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7279D8B2902D9BB007DAA13 /* MovieUITests.swift */; };
 		E7279D8E2902D9BB007DAA13 /* MovieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7279D8D2902D9BB007DAA13 /* MovieUITestsLaunchTests.swift */; };
 		E7279D9B2902E258007DAA13 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7279D9A2902E258007DAA13 /* HomeViewController.swift */; };
-		E7279D9D2902E2A3007DAA13 /* MoiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7279D9C2902E2A3007DAA13 /* MoiveViewController.swift */; };
 		E7279D9F2902E2B1007DAA13 /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7279D9E2902E2B0007DAA13 /* TVViewController.swift */; };
 		E7279DA12902E2C8007DAA13 /* SavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7279DA02902E2C8007DAA13 /* SavesViewController.swift */; };
+		E7345DE32909C98A001BE8A4 /* MoiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7345DE22909C98A001BE8A4 /* MoiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,9 +74,9 @@
 		E7279D8B2902D9BB007DAA13 /* MovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUITests.swift; sourceTree = "<group>"; };
 		E7279D8D2902D9BB007DAA13 /* MovieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E7279D9A2902E258007DAA13 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		E7279D9C2902E2A3007DAA13 /* MoiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoiveViewController.swift; sourceTree = "<group>"; };
 		E7279D9E2902E2B0007DAA13 /* TVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
 		E7279DA02902E2C8007DAA13 /* SavesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesViewController.swift; sourceTree = "<group>"; };
+		E7345DE22909C98A001BE8A4 /* MoiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoiveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +125,7 @@
 		E70527B72906C9CC000CBF00 /* windows */ = {
 			isa = PBXGroup;
 			children = (
+				E7A4711C2909C4D00081552B /* MovieController */,
 				E7267A6C2909A4EF000D8F6D /* HomeController */,
 				E7279D9E2902E2B0007DAA13 /* TVViewController.swift */,
 				E7279DA02902E2C8007DAA13 /* SavesViewController.swift */,
@@ -172,8 +173,6 @@
 		E7267A6C2909A4EF000D8F6D /* HomeController */ = {
 			isa = PBXGroup;
 			children = (
-				E7279D9C2902E2A3007DAA13 /* MoiveViewController.swift */,
-				E7A4711C2909C4D00081552B /* MovieController */,
 				E7279D9A2902E258007DAA13 /* HomeViewController.swift */,
 			);
 			path = HomeController;
@@ -239,6 +238,7 @@
 		E7A4711C2909C4D00081552B /* MovieController */ = {
 			isa = PBXGroup;
 			children = (
+				E7345DE22909C98A001BE8A4 /* MoiveViewController.swift */,
 			);
 			path = MovieController;
 			sourceTree = "<group>";
@@ -412,9 +412,9 @@
 				E7267A6B29099E2B000D8F6D /* ResultsGenres.swift in Sources */,
 				E7267A5F290970F9000D8F6D /* TrendingMovies.swift in Sources */,
 				E7279D9B2902E258007DAA13 /* HomeViewController.swift in Sources */,
-				E7279D9D2902E2A3007DAA13 /* MoiveViewController.swift in Sources */,
 				E70527BA2906CAAD000CBF00 /* MoiveCollectionViewCell.swift in Sources */,
 				E70527C72907100C000CBF00 /* HomeCollectionViewCell.swift in Sources */,
+				E7345DE32909C98A001BE8A4 /* MoiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
