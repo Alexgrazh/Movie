@@ -15,9 +15,10 @@ class MoiveCollectionViewCell: UICollectionViewCell {
     
 
     func setup(media: Results) {
-        
         self.titlemoives.text = media.title
-      
+        let url = URL(string: "https://picsum.photos/200")
+        let data = try? Data(contentsOf: url!)
+        movieImageView.image = UIImage(data: data!)
     }
     
 //    func LoadImage (path : String) {

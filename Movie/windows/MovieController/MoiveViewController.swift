@@ -26,7 +26,7 @@ class MoiveViewController: UIViewController {
         
         let url = "https://api.themoviedb.org/3/trending/movie/week?api_key=3e6e13b4af65d55eed217ca311dfc41e"
         
-        AF.request(url).responseJSON { responseJSON in
+        AF.request(url).responseJSON { [weak self] responseJSON in
             let decoder = JSONDecoder()
             guard let respponseData = responseJSON.data else {return}
 
@@ -36,8 +36,8 @@ class MoiveViewController: UIViewController {
                 print(data.results?.first?.overview ?? "")
                // let trending = try JSONDecoder().decode(TrendingMovies.self, from: respons.data!)
                
-                self.mediaArray = data.results!
-                print(self.mediaArray.count)
+                self?.mediaArray = data.results!
+                self?.collectoinView.reloadData()
                
                
                 
@@ -57,6 +57,7 @@ class MoiveViewController: UIViewController {
 extension MoiveViewController : UICollectionViewDataSource{
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(mediaArray);
         return mediaArray.count
     }
    
@@ -70,9 +71,9 @@ extension MoiveViewController : UICollectionViewDataSource{
 
 extension MoiveViewController: UICollectionViewDelegateFlowLayout{
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 175, height: 275)
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 175, height: 275)
+    }
 //
     
     
