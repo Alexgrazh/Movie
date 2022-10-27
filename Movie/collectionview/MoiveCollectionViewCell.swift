@@ -6,6 +6,7 @@
 //
 
 import UIKit
+//import SDWebImage
 
 class MoiveCollectionViewCell: UICollectionViewCell {
     
@@ -14,16 +15,22 @@ class MoiveCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titlemoives: UILabel!
     
 
+    @IBOutlet weak var bgView: UIView!
+    
+
     func setup(media: Results) {
         
         self.titlemoives.text = media.title
+//        let url = URL(string: "https://picsum.photos/200")
+//                let data = try? Data(contentsOf: url!)
+//                movieImageView.image = UIImage(data: data!)
       
     }
     
 //    func LoadImage (path : String) {
-//        let imageURLString = "https://image.tmdb.org/t/p/w300" + path
-//                let imageURL = URL(string: imageURLString)
-//        movieImageView.Hulk(with: imageURL)
+//        let imageURLString = path
+//        let imageURL = URL(string: imageURLString)
+//        movieImageView.sd_setImage(with: imageURL)
 //
 //    }
 //    func setup(with movie: Movie){

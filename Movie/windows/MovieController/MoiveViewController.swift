@@ -35,9 +35,9 @@ class MoiveViewController: UIViewController {
                 let data = try decoder.decode(TrendingMovies.self, from: respponseData)
                 print(data.results?.first?.overview ?? "")
                // let trending = try JSONDecoder().decode(TrendingMovies.self, from: respons.data!)
-               
+            
                 self.mediaArray = data.results!
-                print(self.mediaArray.count)
+                self.collectoinView.reloadData()
                
                
                 
@@ -70,10 +70,10 @@ extension MoiveViewController : UICollectionViewDataSource{
 
 extension MoiveViewController: UICollectionViewDelegateFlowLayout{
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 175, height: 275)
-//    }
-//
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 175, height: 275)
+    }
+
     
     
 
